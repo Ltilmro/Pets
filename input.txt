@@ -1,0 +1,11 @@
+Vasya,cat,George,9
+Petya,dog,Bob,5
+Masha,fish,,10
+Misha,cat,Billy,2
+Misha,cat,Jean,1
+Vasya,dog,Robert,6
+Vasya,hamster,Peter,3
+Petya,parrot,George,4
+Masha,fish,George,8
+Kolya,fish,George,6
+Maxim,cat,Barsik,11
