@@ -21,8 +21,8 @@ int main()
 		o.str("");
 		ost.str("");
 		getline(input, t, ',');
-        getline(input, u, ',');
-	    getline(input, v);
+        	getline(input, u, ',');
+	    	getline(input, v);
 		w=stoi(v);
 		o << t << u;
 		os = o.str();
