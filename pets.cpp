@@ -58,7 +58,7 @@ int main()
 		case 1:
 			for (set<string>::iterator its = owners.begin(); its !=owners.end() ; its++)
 			{
-				std::string e(*its);
+				string e(*its);
 				cout << e << " has " << ownertype.count(e)<<" different species"<<endl;
 			}
 			break;
@@ -66,18 +66,18 @@ int main()
 			cout << "Enter pet species\n";
 			cin >> str;
 			ret = typeowner.equal_range(str);
-			std::cout << str<<" owners:";
-			for (std::multimap<string, string>::iterator itis = ret.first; itis != ret.second; ++itis)
+			cout << str<<" owners:";
+			for (multimap<string, string>::iterator itis = ret.first; itis != ret.second; ++itis)
 			{
 				err = 0;
 				std::cout << ' ' << itis->second;
 			}
-			std::cout << '\n';
+			cout << '\n';
 			ret = namepet.equal_range(str);
-			std::cout << str << " names:";
-			for (std::multimap<string, string>::iterator itis = ret.first; itis != ret.second; ++itis)
-				std::cout << ' ' << itis->second;
-			std::cout << '\n';
+			cout << str << " names:";
+			for (multimap<string, string>::iterator itis = ret.first; itis != ret.second; ++itis)
+				cout << ' ' << itis->second;
+			cout << '\n';
 			if (err == 1)
 			{
 				cout << str << "s don't exist\n";
@@ -86,7 +86,7 @@ int main()
 		case 3:
 			cout << "Enter pet name\n";
 		    cin>>str;
-			cout << petname.count(str) <<" specie of animals named "<<str<< endl;
+			cout << petname.count(str) <<" species of animals named "<<str<< endl;
 			if (petname.count(str) == 0)
 			{
 				cout << "An unpopular name\n";
@@ -98,7 +98,7 @@ int main()
                 string e(*its);
 				cout << e<<":";
 				r = agetype.equal_range(e);
-				for (std::multimap<string, int>::iterator itis = r.first; itis != r.second; ++itis)
+				for (multimap<string, int>::iterator itis = r.first; itis != r.second; ++itis)
 				{
 					int z = itis->second;
 					if (z < min)
