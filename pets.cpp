@@ -82,6 +82,7 @@ int main()
 			{
 				cout << str << "s don't exist\n";
 			}
+				err=1;
 			break;
 		case 3:
 			cout << "Enter pet name\n";
